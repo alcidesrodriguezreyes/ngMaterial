@@ -9,38 +9,47 @@ and open the template in the editor.
         <title>Calendar</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- apple -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!-- chrome -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
         
         <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
         <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
                         
         <!-- angular material styles -->
         <link href="bower_components/angular-material/angular-material.min.css" rel="stylesheet" type="text/css"/>        
-        <link href="bower_components/angular-material/themes/red-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="bower_components/angular-material/themes/target-theme.css" rel="stylesheet" type="text/css"/>
         
         <!-- custom styles -->
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
         
     </head>
-    <body>
-        <div layout="column" layout-fill>
-            <md-toolbar class="md-tall md-red-theme">
+    <body layout="row">
+        <div flex="" layout="column" role="main" tabindex="-1">
+            <md-toolbar class="md-tall md-target-theme" >
                 <div class="md-toolbar-tools">
-                    <h2><a href="#"><i class="fa fa-dot-circle-o targetLogo"></i> service now</a></h2>
+                    <md-button hide-gt-sm aria-label="Menu">
+                        <i class="fa fa-bars"></i>
+                    </md-button>
+                    <h2 hide-sm><a href="#"><i class="fa fa-dot-circle-o targetLogo"></i> service now</a></h2>
                     <!-- fill up the space between left and right area -->
                     <span flex></span>
                     <span class="rightTools" hide-gt-sm>
                         
-                        <md-button>
+                        <md-button aria-label="search">
                             <i class="fa fa-search"></i>
                         </md-button>
-                        <md-button>
+                        <md-button aria-label="more">
                             <i class="fa fa-ellipsis-v"></i>
                         </md-button>
                     </span>
                     <span hide-sm>Welcome, <a href="#">John Doe</a> | <a href="#">logout</a></span>
                 </div>
                 
-                <div class="md-toolbar-tools navigationBar">
+                <div class="md-toolbar-tools navigationBar" hide-sm>
                     <ul flex="">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Order</a></li>
@@ -53,8 +62,38 @@ and open the template in the editor.
                 
             </md-toolbar>
             
-            <md-content>
-                Hello!
+            <md-content flex="" md-scroll-y="" class="md-padding" ng-view="">
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                Hello!<br>
+                
             </md-content>
         </div>
         
