@@ -5,3 +5,9 @@
  */
 
 var calendarApp = angular.module('calendarApp', ['ngMaterial']);
+
+calendarApp.controller('mainCtrl', function($scope, $mdSidenav){
+    $scope.toggleLeftNav = function(){
+        $mdSidenav('left').toggle();
+    };
+});

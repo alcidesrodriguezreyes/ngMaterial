@@ -7,9 +7,11 @@ and open the template in the editor.
     Created on : 21/02/2015, 02:51:00 PM
     Author     : USER
 */
+body{
+    font-size: 14px;
+}
 .md-toolbar-tools h2{
     margin: 0;
-    font-size: 1.5em;
 }
 .targetLogo{
     vertical-align: middle;

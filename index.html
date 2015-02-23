@@ -17,7 +17,9 @@ and open the template in the editor.
         <meta name="apple-mobile-web-app-capable" content="yes">
         
         <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
-        <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <!--link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
                         
         <!-- angular material styles -->
         <link href="bower_components/angular-material/angular-material.min.css" rel="stylesheet" type="text/css"/>        
@@ -27,11 +29,26 @@ and open the template in the editor.
         <link href="css/custom.css" rel="stylesheet" type="text/css"/>
         
     </head>
-    <body layout="row">
+    <body layout="row" ng-controller="mainCtrl">
+        <!-- left sidebar -->
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+            <md-toolbar class="md-target-theme">
+                <h1 class="md-toolbar-tools">Sidenav Left</h1>
+            </md-toolbar>
+            <md-content class="md-target-theme">
+                
+            </md-content>
+        </md-sidenav>
+        <!-- end left sidebar -->
+            
+            
+            
+            
         <div flex="" layout="column" role="main" tabindex="-1">
+            
             <md-toolbar class="md-tall md-target-theme" >
                 <div class="md-toolbar-tools">
-                    <md-button hide-gt-sm aria-label="Menu">
+                    <md-button hide-gt-sm aria-label="Menu" ng-click="toggleLeftNav()">
                         <i class="fa fa-bars"></i>
                     </md-button>
                     <h2 hide-sm><a href="#"><i class="fa fa-dot-circle-o targetLogo"></i> service now</a></h2>
