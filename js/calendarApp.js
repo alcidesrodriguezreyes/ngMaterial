@@ -10,4 +10,10 @@ calendarApp.controller('mainCtrl', function($scope, $mdSidenav){
     $scope.toggleLeftNav = function(){
         $mdSidenav('left').toggle();
     };
+    $scope.onSwipeRight = function(){
+        $mdSidenav('left').open();
+    };
+    $scope.onSwipeLeft = function(){
+        $mdSidenav('left').close();
+    };
 });

@@ -31,7 +31,7 @@ and open the template in the editor.
     </head>
     <body layout="row" ng-controller="mainCtrl">
         <!-- left sidebar -->
-        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-swipe-left="onSwipeLeft()">
             <md-toolbar class="md-target-theme">
                 <h1 class="md-toolbar-tools">Sidenav Left</h1>
             </md-toolbar>
@@ -79,7 +79,7 @@ and open the template in the editor.
                 
             </md-toolbar>
             
-            <md-content flex="" md-scroll-y="" class="md-padding" ng-view="">
+            <md-content flex="" md-scroll-y="" class="md-padding" ng-view="" md-swipe-right="onSwipeRight()">
                 Hello!<br>
                 Hello!<br>
                 Hello!<br>
@@ -112,7 +112,7 @@ and open the template in the editor.
                 Hello!<br>
                 
             </md-content>
-        </div>
+        </div>        
         
         
         <!-- angular -->
